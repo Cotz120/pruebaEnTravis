@@ -1,1 +1,13 @@
-print("Hola mundo, estoy en Travis CI")
+import unittest
+
+from sumas import sum
+
+
+class TestSum(unittest.TestCase):
+    def test_list_int(self):
+        numeros = [1, 2, 3]
+        resultado = sum(numeros)
+        self.assertEqual(resultado, 6)
+
+if __name__ == '__main__':
+    unittest.main()
