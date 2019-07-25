@@ -4,7 +4,7 @@ from sumas import sum
 
 class TestSum(unittest.TestCase):
     def test_list_int(self):
-        numeros = [14, 5, 4]
+        numeros = [3, 3, 4]
         resultado = sum(numeros)
         self.assertEqual(resultado, 10)
 
